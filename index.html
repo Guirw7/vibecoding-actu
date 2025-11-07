@@ -6,12 +6,13 @@
     <title>Mini site – Actus</title>
     <meta name="description" content="Mini site d'actualités : présentation et dernières infos." />
     <style>
-        /* Optionnel : un tout petit style pour que ce soit propre */
         :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
         body { margin: 0; background: #f7f7f8; color: #1f2328; }
         header, main { max-width: 720px; margin: 0 auto; padding: 24px; }
         header { background: white; border-bottom: 1px solid #e6e8eb; }
         h1 { margin: 0; font-size: 1.8rem; }
+        h2 { font-size: 1.4rem; margin-top: 1.5rem; }
+        article { background: #fff; border: 1px solid #e6e8eb; border-radius: 12px; padding: 16px; margin: 12px 0; }
         p { line-height: 1.6; }
     </style>
 </head>
@@ -26,8 +27,19 @@
         courte présentation, ainsi que les dernières informations publiées.
     </p>
 
-    <!-- Zone future : liste d’articles / cartes d’actus -->
-    <!-- <section id="actus"></section> -->
+    <!-- Section Actualités -->
+    <section id="actualites" aria-labelledby="titre-actus">
+        <h2 id="titre-actus">Actualités</h2>
+
+        <article>
+            <h3>Première actu : lancement du mini site</h3>
+            <p>
+                Nous venons d’ouvrir ce mini site consacré aux actus. Revenez
+                régulièrement pour découvrir des articles courts, des annonces et
+                des mises à jour sur nos projets.
+            </p>
+        </article>
+    </section>
 </main>
 </body>
 </html>
